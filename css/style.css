@@ -319,6 +319,55 @@ header label{
     padding: 5rem 2rem 2rem 2rem;
 }
 
+/* ---------- SECTION FIVE ---------- */
+
+.section-five{
+    padding: 4rem 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+.section-five form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    width: 70%;
+}
+
+.section-five form div{
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+}
+
+.section-five form div input{
+    width: 50%;
+}
+
+.section-five form textarea{
+    width: 100%;
+}
+
+.section-five input, textarea{
+    border: 1px solid black;
+    padding: .7rem;
+    background-color: #fcfcfc;
+}
+
+.section-five input::placeholder, textarea::placeholder{
+    font-size: 1rem;
+}
+
+.section-five input[type="submit"] {
+    background-color: var(--mainColor);
+    width: 50%;
+    font-weight: 400;
+}
+
 /* ---------- FOOTER ---------- */
 
 footer{
@@ -586,6 +635,29 @@ footer h2{
 
     .testimonio img{
         max-width: 8rem;
+    }
+
+    /* ---------- SECTION FIVE RESPONSIVE---------- */
+
+    .section-five{
+        padding: 4rem 2rem;
+        background-color: #f3f3f3;
+    }
+
+    .section-five form{
+        width: 100%;
+    }
+
+    .section-five form div{
+        flex-direction: column;
+    }
+
+    .section-five form div input{
+        width: 100%;
+    }
+
+    .section-five input[type="submit"] {
+        width: 100%;
     }
 
     /* ---------- FOOTER RESPONSIVE---------- */
