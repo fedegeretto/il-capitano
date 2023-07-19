@@ -401,19 +401,50 @@ footer h2{
     gap: .5rem;
 }
 
-.footer-social-container div p{
+ .footer-social-container div p{
     color: #fff;
-}
-
-.footer-social-container div i{
-    font-size: 1.2rem;
+    line-height: 1.4;
 }
 
 .icons-social{
     display: flex;
-    gap: 1rem;
-    font-size: 1.2rem;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
 }
+
+.icons-social i{
+    margin:.5rem 0;
+    margin-right: 1rem;
+    border-radius: 50%;
+    background:#000000;
+    color: var(--mainColor);
+    font-size: 1rem;
+    height:2rem;
+    width:2rem;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.informacion-footer{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.informacion-footer i{
+    margin:.5rem 0;
+    margin-right: 1rem;
+    border-radius: 50%;
+    background:#000000;
+    color: var(--mainColor);
+    font-size: 1rem;
+    height:3rem;
+    width:3rem;
+    line-height: 3rem;
+    text-align: center;
+}
+
 
 .copy{
     padding: .5rem;
@@ -669,12 +700,23 @@ footer h2{
     .footer-social-container{
         flex-direction: column;
         width: 80%;
+        gap: 0;
     }
 
     .icons-social{
         width: 90%;
         justify-content: center;
-        gap: 2rem;
+        gap: 0rem;
         font-size: 1.5rem;
+    }
+
+    .copy{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .copy p{
+        width: 60%;
     }
 }
